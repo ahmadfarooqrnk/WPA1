@@ -1,0 +1,471 @@
+.body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.main-header {
+  position: relative;
+  top: 0%;
+  background-color: rgba(245, 247, 250, 0.98);
+  box-shadow: none;
+  height: 4rem;
+  border-bottom: 0px;
+  overflow: visible;
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.content {
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.logo {
+  margin-left: 2rem;
+  width: 14rem;
+}
+.logo img {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.top-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.search-button {
+  background-color: transparent;
+  font-size: 12px;
+  padding: 8px 8px;
+  cursor: pointer;
+  border: 1px solid rgb(52, 168, 202);
+  font-weight: bold;
+  color: rgb(52, 168, 202);
+  position: relative;
+  display: inline-block;
+}
+.search-button button {
+  border: none;
+}
+
+.search-button i {
+  margin-right: 10px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 105%;
+  width: 100%;
+  margin-right: 5%;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+}
+
+.search-button:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a {
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+.how-it-works {
+  margin: 10px 10px;
+  font-size: 12px;
+  padding: 10px 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  color: rgb(71, 73, 79);
+}
+.how-it-works span {
+  margin: 0%;
+}
+.how-it-works:hover {
+  color: rgb(250, 123, 5);
+}
+.signup {
+  margin: 10px 10px;
+  font-size: 12px;
+  padding: 10px 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  color: rgb(71, 73, 79);
+}
+.signup:hover {
+  color: rgb(250, 123, 5);
+}
+.login {
+  margin: 10px 10px;
+  font-size: 12px;
+  padding: 10px 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  color: rgb(71, 73, 79);
+}
+.login:hover {
+  color: rgb(250, 123, 5);
+}
+.freelancer {
+  margin: 10px 10px;
+  font-size: 12px;
+  padding: 10px 8px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  color: rgb(250, 123, 5);
+}
+.before {
+  margin: 10px 10px;
+}
+.before ::before {
+  position: absolute;
+  top: 20px;
+  background-color: rgb(221, 222, 225);
+  width: 2px;
+  height: 5%;
+  content: "";
+}
+.toggle {
+  display: none;
+}
+.lower-content {
+  background-color: #ffffff;
+  border-top: 1px solid rgb(214, 212, 212);
+  border-bottom: 3px solid rgba(160, 157, 157, 0.349);
+  overflow: visible;
+  font-family: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  height: 6.25rem;
+  justify-content: center;
+  text-align: center;
+  height: fit-content;
+}
+
+.inner-text {
+  margin: 0rem 1rem;
+  display: flex;
+}
+.inner-text p {
+  margin: 0 1rem;
+  font-size: 13px;
+  padding: 10px 5px;
+  cursor: pointer;
+  border: none;
+  font-weight: 500;
+  color: rgb(71, 73, 79);
+}
+.slider {
+  background-color: rgba(245, 247, 250, 0.98);
+  padding-top: 15px;
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.125rem;
+  padding-left: 1.125rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.title-box {
+  margin-left: 50px;
+  padding: auto;
+  width: calc(50% - 2.25rem);
+}
+.title {
+  margin-top: 2rem;
+  font-family: Nunito, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.2;
+  color: rgb(250, 123, 5);
+  margin-bottom: 2rem;
+}
+.subtitle {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 2rem;
+  font-family: "Open Sans", sans-serif;
+}
+.searchbar {
+  display: flex;
+}
+.searchbutton {
+  background-color: rgb(250, 123, 5);
+  width: 12%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 1px solid rgba(161, 159, 159, 0.26);
+  font-size: 150%;
+  color: #f3eeee;
+}
+.searchbox {
+  background-color: white;
+
+  width: 70%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 1px solid rgba(161, 159, 159, 0.26);
+}
+.typebox {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding: 2% 3%;
+}
+.typebox p {
+  font-size: 100%;
+  color: rgb(148, 144, 144);
+}
+
+.skills {
+  margin: 3%;
+  display: flex;
+  font-size: 100%;
+  color: rgba(99, 83, 83, 0.726);
+  gap: 10px;
+  align-items: center;
+}
+.toggle-text {
+  display: none;
+}
+.suggestions {
+  display: flex;
+  gap: 15px;
+}
+.suggestions p {
+  padding: 10px;
+  background-color: rgb(224, 223, 223);
+  border-radius: 10px;
+}
+.imgbox {
+  position: relative;
+  width: calc(50% - 2.25rem);
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+.imgbox img {
+  max-width: 100%;
+  height: auto;
+}
+
+.reviewbox {
+  position: absolute;
+  background-color: rgb(253, 255, 255);
+  width: 22%;
+  height: 35%;
+  bottom: 0%;
+  right: 25px;
+  border-radius: 20px;
+  padding: 1%;
+}
+
+.profileimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profileimg img {
+  margin: 1%;
+  width: auto;
+  height: auto;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.profiletitle p {
+  font-size: 100%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+}
+.profilename p {
+  font-size: 90%;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1px;
+}
+.reviews i,
+p {
+  font-size: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-dots {
+  display: flex;
+  width: 150px;
+  padding-left: 30%;
+}
+
+.slider-dot {
+  width: 10px;
+  height: 10px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.slider-dot.hover {
+  background-color: blue;
+}
+@media screen and (max-width: 1200px) {
+  .logo {
+    width: 10rem;
+  }
+  .search-button,
+  .how-it-works,
+  .signup,
+  .login,
+  .freelancer {
+    font-size: 8px;
+  }
+  .title {
+    font-size: 60px; /* Decrease font size for smaller screens */
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  .suggestions,
+  .skills {
+    font-size: 70%;
+  }
+  .inner-text p {
+    font-size: 8px;
+    padding: 4px 2px;
+  }
+  .slider {
+    margin-top: 1rem;
+  }
+  .reviewbox {
+    height: 40%;
+  }
+  .profilename p,
+  .reviews i,
+  p {
+    font-size: 70%;
+  }
+  .profiletitle p {
+    font-size: 80%;
+  }
+  .slider-dot {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .top-items {
+    display: none;
+  }
+  .toggle {
+    display: block;
+    margin-right: 2rem;
+  }
+  .slider {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.4rem;
+  }
+  .inner-text {
+    display: none;
+  }
+  .lower-content {
+    justify-content: flex-start;
+  }
+  .toggle-text {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 15px;
+    left: 0;
+  }
+
+  .title {
+    display: grid;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  .imgbox {
+    width: calc(100% - 2.25rem);
+  }
+  .title-box {
+    display: grid;
+    margin-left: 0;
+    width: calc(100% - 2.25rem);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .reviewbox {
+    height: auto;
+    right: 5px;
+  }
+  .profilename p,
+  .reviews i,
+  p {
+    font-size: 60%;
+  }
+  .profiletitle p {
+    font-size: 70%;
+  }
+  .slider-dot {
+    width: 4px;
+    height: 4px;
+  }
+  .title {
+    font-size: 25px;
+  }
+  .subtitle {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .searchbox {
+    width: 70%;
+  }
+
+  .typebox p {
+    font-size: 50%;
+    color: rgb(77, 75, 75);
+  }
+  .searchbutton {
+    font-size: 85%;
+  }
+
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .suggestions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo {
+    width: 6rem;
+  }
+}

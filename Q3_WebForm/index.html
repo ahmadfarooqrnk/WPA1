@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="plisfunction.js"></script>
+</head>
+<body>
+    <form id="jobApplicationForm">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="emailAddress">Email Address:</label>
+            <input type="email" id="emailAddress" name="emailAddress" required>
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="zipCode">ZIP Code:</label>
+            <input type="text" id="zipCode" name="zipCode" required>
+        </fieldset>
+
+        <!-- Resume and Cover Letter -->
+        <fieldset>
+            <legend>Resume and Cover Letter</legend>
+            <label for="resumeUpload">Upload Resume:</label>
+            <input type="file" id="resumeUpload" name="resumeUpload" required>
+
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea id="coverLetter" name="coverLetter" rows="5" required></textarea>
+        </fieldset>
+
+        <!-- Education -->
+        <fieldset>
+            <legend>Education</legend>
+            <label for="educationLevel">Highest Level of Education Attained:</label>
+            <select id="educationLevel" name="educationLevel" required>
+                <option value="">--Please choose an option--</option>
+                <option value="highSchool">High School</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">Ph.D</option>
+            </select>
+
+            <label for="schoolName">Name of School/University:</label>
+            <input type="text" id="schoolName" name="schoolName" required>
+
+            <label for="major">Major/Area of Study:</label>
+            <input type="text" id="major" name="major" required>
+
+            <label for="graduationYear">Graduation Year:</label>
+            <input type="number" id="graduationYear" name="graduationYear" required>
+        </fieldset>
+          <!-- Employment History -->
+        <fieldset>
+            <legend>Employment History</legend>
+            <label for="previousJobTitle">Previous Job Title:</label>
+            <input type="text" id="previousJobTitle" name="previousJobTitle" required>
+
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="companyName" required>
+
+            <label for="employmentDates">Employment Dates:</label>
+            <input type="text" id="employmentDates" name="employmentDates" placeholder="e.g., Jan 2018 - Mar 2021" required>
+
+            <label for="jobResponsibilities">Job Responsibilities:</label>
+            <textarea id="jobResponsibilities" name="jobResponsibilities" rows="3" required></textarea>
+        </fieldset>
+
+        <!-- Skills -->
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="relevantSkills">Relevant Skills:</label>
+            <input type="text" id="relevantSkills" name="relevantSkills" placeholder="e.g., Programming Languages, Software Proficiency" required>
+
+            <label for="certifications">Certifications:</label>
+            <input type="text" id="certifications" name="certifications" placeholder="e.g., Certified Scrum Master" required>
+        </fieldset>
+
+        <!-- Availability -->
+        <fieldset>
+            <legend>Availability</legend>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="workSchedule">Preferred Work Schedule:</label>
+            <input type="text" id="workSchedule" name="workSchedule" placeholder="e.g., Full-time, Part-time" required>
+
+            <label for="willingnessToRelocate">Willingness to Relocate:</label>
+            <select id="willingnessToRelocate" name="willingnessToRelocate" required>
+                <option value="">--Please choose an option--</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </fieldset>
+
+        <!-- References -->
+        <fieldset>
+            <legend>References</legend>
+            <label for="referenceName">Reference Name:</label>
+            <input type="text" id="referenceName" name="referenceName" required>
+
+            <label for="referenceContact">Reference Contact Information:</label>
+            <input type="text" id="referenceContact" name="referenceContact" required>
+
+            <label for="relationshipToApplicant">Relationship to Applicant:</label>
+            <input type="text" id="relationshipToApplicant" name="relationshipToApplicant" required>
+        </fieldset>
+
+        <!-- Additional Questions -->
+        <fieldset>
+            <legend>Additional Questions</legend>
+            <label for="reasonForInterest">Why do you want to work for this company?</label>
+            <textarea id="reasonForInterest" name="reasonForInterest" rows="3" required></textarea>
+        </fieldset>
+
+        <!-- Consent and Agreement -->
+        <fieldset>
+            <legend>Consent and Agreement</legend>
+            <label>
+                <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+                I agree to the terms and conditions.
+            </label>
+
+            <label>
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                I acknowledge the privacy policy.
+            </label>
+        </fieldset>
+
+        <!-- Form Submission -->
+        <button type="submit">Submit Application</button>
+
+        <!-- View Applications as Table (Placeholder for functionality) -->
+        <button type="button" id="viewApplications">View Applications as Table</button>
+    </form>
+</body>
+</html>
